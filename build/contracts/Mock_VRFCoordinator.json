@@ -1,0 +1,1161 @@
+{
+  "contractName": "Mock_VRFCoordinator",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_linkToken",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_keyHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_fee",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "keyHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "seed",
+          "type": "uint256"
+        }
+      ],
+      "name": "RandomnessRequest",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "LINK",
+      "outputs": [
+        {
+          "internalType": "contract LinkTokenInterface",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "requestId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "randomness",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "consumerContract",
+          "type": "address"
+        }
+      ],
+      "name": "callBackWithRandomness",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "currentLotteryId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onTokenTransfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "randomResult",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_linkToken\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"_keyHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"_fee\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"keyHash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"seed\",\"type\":\"uint256\"}],\"name\":\"RandomnessRequest\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"LINK\",\"outputs\":[{\"internalType\":\"contract LinkTokenInterface\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"requestId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"randomness\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"consumerContract\",\"type\":\"address\"}],\"name\":\"callBackWithRandomness\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"currentLotteryId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"fee\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"onTokenTransfer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"randomResult\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"THIS CONTRACT IS FOR TESTING PURPOSES ONLY.\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/workspace/ethereum/phoenixdefi/smart-contracts/lottery/contracts/Mock_VRFCoordinator.sol\":\"Mock_VRFCoordinator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/workspace/ethereum/phoenixdefi/smart-contracts/lottery/contracts/ILottery.sol\":{\"keccak256\":\"0xbe143404c29b4136ca0390213d43d31a3a02b0bc50b0deb5ba2522327a8625ab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://845bcb114c947e66f8cbd7b5fb4cb1da5792bc770a17a171e796ee7062e81954\",\"dweb:/ipfs/QmUJJU2oA2GRorixDmBFxSDL2mne4Qj8eVFt7y9p49mNgy\"]},\"/workspace/ethereum/phoenixdefi/smart-contracts/lottery/contracts/Mock_VRFCoordinator.sol\":{\"keccak256\":\"0xe5f76dcd3aa7ed647e5e60b096d8d56797ebfea2576a1b0884be9a50df396a13\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://defab31faff7e42d2bec33d70dcd6b89a6dd91c7414c37d16040e3db37f47b62\",\"dweb:/ipfs/QmVegD9GK3SN2BeDiEKynZgaoki3MfJVffySbpECfivPwG\"]},\"@chainlink/contracts/src/v0.6/VRFConsumerBase.sol\":{\"keccak256\":\"0xbb84a6411e071d5b04b36d7dda59eaf1cb5a28b3b289757a5ac849ddf9befac3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6bc702d1ec269920a3f0cf371155b6c4800d36233949873144e95ce3c4427eb3\",\"dweb:/ipfs/QmUrYPpfh7TAcUBx3B5ugW2jCAeWThMssY5oyRgQXQRkbE\"]},\"@chainlink/contracts/src/v0.6/VRFRequestIDBase.sol\":{\"keccak256\":\"0x0c3bd40c63dac8398a979b1228c8ecb1c269c157dd16f2dce2086d2270b65b22\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ed9db87be9dfb0f763a556d8d80356b08282b8ea48484838cdf470a5c3cd15d5\",\"dweb:/ipfs/QmPLhwDAS3TPDiEQmTyqXnWBqwEMBSbXtjEiQDSGejoiPt\"]},\"@chainlink/contracts/src/v0.6/interfaces/LinkTokenInterface.sol\":{\"keccak256\":\"0xe245a7be950c94d87bb775ae9ee9fbd693fbe2987778e6ce0b04605ea44b7b68\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd2c3165d949fc66fe407b96eb3dc2092c7e800f4c073b411bf7b96de3e156c9\",\"dweb:/ipfs/QmcfJhR1Np4GsLWnww2Duqks2wEzYk8VDTvCAYy7MisG1r\"]},\"@chainlink/contracts/src/v0.6/tests/VRFCoordinatorMock.sol\":{\"keccak256\":\"0x4a96b7cea8f0f1b7461571a79c66b3bdf9c6b0e00dc0133c9f09faeccefce23f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ce5a04789f4d6d7e096550b13398ca40038bab298511b97e9a2a1cba6e5daa7a\",\"dweb:/ipfs/QmTQ2qAu1SraEFPxie7TttDdnMf6pEMRZR66dxMkTqAVNw\"]},\"@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol\":{\"keccak256\":\"0x105f5e9491f3d0bbdd4f1c7627eb839d69b944bfd803028a01cc083597692c1f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ec45a2748a024a947a921183d4102d5e206808588501d85ddc4f5668a009bc73\",\"dweb:/ipfs/QmRNAMpq7LdWFnJ7wWKGbUuAcURaGSS42PMxtQ4vjrHmp9\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516104613803806104618339818101604052606081101561003357600080fd5b5080516020820151604090920151600080546001600160a01b039093166001600160a01b0319909316929092179091556001919091556002556103e68061007b6000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80631b6b6d231461005c57806342619f66146100805780636be4097c1461009a578063a4c0ed36146100a2578063cf55fe971461015f575b600080fd5b610064610191565b604080516001600160a01b039092168252519081900360200190f35b6100886101a0565b60408051918252519081900360200190f35b6100886101a6565b61015d600480360360608110156100b857600080fd5b6001600160a01b03823516916020810135918101906060810160408201356401000000008111156100e857600080fd5b8201836020820111156100fa57600080fd5b8035906020019184600183028401116401000000008311171561011c57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101ac945050505050565b005b61015d6004803603606081101561017557600080fd5b50803590602081013590604001356001600160a01b0316610266565b6000546001600160a01b031681565b60045481565b60055481565b6000546001600160a01b03163314610201576040805162461bcd60e51b815260206004820152601360248201527226bab9ba103ab9b2902624a725903a37b5b2b760691b604482015290519081900360640190fd5b60008082806020019051604081101561021957600080fd5b5080516020909101516040519193509150819083906001600160a01b038816907f7a9a0a6960d95b32cded93c30e63e7c2eb9e877230813c172110ea54dc1c915c90600090a45050505050565b604080516024810185905260448082018590528251808303909101815260649091019091526020810180516001600160e01b03166394985ddd60e01b179052600090620324b0805a1015610301576040805162461bcd60e51b815260206004820152601b60248201527f6e6f7420656e6f7567682067617320666f7220636f6e73756d65720000000000604482015290519081900360640190fd5b6000846001600160a01b0316836040518082805190602001908083835b6020831061033d5780518252601f19909201916020918201910161031e565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461039f576040519150601f19603f3d011682016040523d82523d6000602084013e6103a4565b606091505b5050505050505050505056fea264697066735822122037e7ced6b3282076340884fde100812ac5f12fbc91277bc590611cf38866968364736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80631b6b6d231461005c57806342619f66146100805780636be4097c1461009a578063a4c0ed36146100a2578063cf55fe971461015f575b600080fd5b610064610191565b604080516001600160a01b039092168252519081900360200190f35b6100886101a0565b60408051918252519081900360200190f35b6100886101a6565b61015d600480360360608110156100b857600080fd5b6001600160a01b03823516916020810135918101906060810160408201356401000000008111156100e857600080fd5b8201836020820111156100fa57600080fd5b8035906020019184600183028401116401000000008311171561011c57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101ac945050505050565b005b61015d6004803603606081101561017557600080fd5b50803590602081013590604001356001600160a01b0316610266565b6000546001600160a01b031681565b60045481565b60055481565b6000546001600160a01b03163314610201576040805162461bcd60e51b815260206004820152601360248201527226bab9ba103ab9b2902624a725903a37b5b2b760691b604482015290519081900360640190fd5b60008082806020019051604081101561021957600080fd5b5080516020909101516040519193509150819083906001600160a01b038816907f7a9a0a6960d95b32cded93c30e63e7c2eb9e877230813c172110ea54dc1c915c90600090a45050505050565b604080516024810185905260448082018590528251808303909101815260649091019091526020810180516001600160e01b03166394985ddd60e01b179052600090620324b0805a1015610301576040805162461bcd60e51b815260206004820152601b60248201527f6e6f7420656e6f7567682067617320666f7220636f6e73756d65720000000000604482015290519081900360640190fd5b6000846001600160a01b0316836040518082805190602001908083835b6020831061033d5780518252601f19909201916020918201910161031e565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461039f576040519150601f19603f3d011682016040523d82523d6000602084013e6103a4565b606091505b5050505050505050505056fea264697066735822122037e7ced6b3282076340884fde100812ac5f12fbc91277bc590611cf38866968364736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "211:453:7:-:0;;;436:226;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;436:226:7;;;;;;;;;;;361:4:17;:38;;-1:-1:-1;;;;;361:38:17;;;-1:-1:-1;;;;;;361:38:17;;;;;;;;;;;616:18:7;;;;644:3:::1;:10:::0;211:453;;;;;;",
+  "deployedSourceMap": "211:453:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;173:30:17;;;:::i;:::-;;;;-1:-1:-1;;;;;173:30:17;;;;;;;;;;;;;;361:27:7;;;:::i;:::-;;;;;;;;;;;;;;;;394:31;;;:::i;412:253:17:-;;;;;;;;;;;;;;;;-1:-1:-1;;;;;412:253:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;412:253:17;;-1:-1:-1;412:253:17;;-1:-1:-1;;;;;412:253:17:i;:::-;;671:423;;;;;;;;;;;;;;;;-1:-1:-1;671:423:17;;;;;;;;;;;-1:-1:-1;;;;;671:423:17;;:::i;173:30::-;;;-1:-1:-1;;;;;173:30:17;;:::o;361:27:7:-;;;;:::o;394:31::-;;;;:::o;412:253:17:-;1160:4;;-1:-1:-1;;;;;1160:4:17;1138:10;:27;1130:59;;;;;-1:-1:-1;;;1130:59:17;;;;;;;;;;;;-1:-1:-1;;;1130:59:17;;;;;;;;;;;;;;;533:15:::1;550:12:::0;577:5:::1;566:37;;;;;;;;;;;;::::0;::::1;;-1:-1:-1::0;566:37:17;;::::1;::::0;;::::1;::::0;;618:40;566:37;;-1:-1:-1;566:37:17;-1:-1:-1;566:37:17;;;;-1:-1:-1;;;;;618:40:17;::::1;::::0;::::1;::::0;;;::::1;1199:1;;412:253:::0;;;:::o;671:423::-;862:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;862:78:17;-1:-1:-1;;;862:78:17;;;815:17;;962:6;;986:9;:14;;978:54;;;;;-1:-1:-1;;;978:54:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;1043:12;1060:16;-1:-1:-1;;;;;1060:21:17;1082:4;1060:27;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;1060:27:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;671:423:17:o",
+  "source": "//SPDX-License-Identifier: MIT\npragma solidity ^0.6.0;\n\nimport \"@chainlink/contracts/src/v0.6/tests/VRFCoordinatorMock.sol\";\nimport \"./ILottery.sol\";\n\n/**\n * @dev THIS CONTRACT IS FOR TESTING PURPOSES ONLY.\n */\ncontract Mock_VRFCoordinator is VRFCoordinatorMock {\n    \n    bytes32 internal keyHash;\n    uint256 internal fee;\n    address internal requester;\n    uint256 public randomResult;\n    uint256 public currentLotteryId;\n    \n    constructor(\n        address _linkToken,\n        bytes32 _keyHash,\n        uint256 _fee\n    ) \n        VRFCoordinatorMock( \n            _linkToken  \n        ) public\n    {\n        keyHash = _keyHash;\n        fee = _fee; \n    }\n}",
+  "sourcePath": "/workspace/ethereum/phoenixdefi/smart-contracts/lottery/contracts/Mock_VRFCoordinator.sol",
+  "ast": {
+    "absolutePath": "/workspace/ethereum/phoenixdefi/smart-contracts/lottery/contracts/Mock_VRFCoordinator.sol",
+    "exportedSymbols": {
+      "Mock_VRFCoordinator": [
+        2076
+      ]
+    },
+    "id": 2077,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2039,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "31:23:7"
+      },
+      {
+        "absolutePath": "@chainlink/contracts/src/v0.6/tests/VRFCoordinatorMock.sol",
+        "file": "@chainlink/contracts/src/v0.6/tests/VRFCoordinatorMock.sol",
+        "id": 2040,
+        "nodeType": "ImportDirective",
+        "scope": 2077,
+        "sourceUnit": 3021,
+        "src": "56:68:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/workspace/ethereum/phoenixdefi/smart-contracts/lottery/contracts/ILottery.sol",
+        "file": "./ILottery.sol",
+        "id": 2041,
+        "nodeType": "ImportDirective",
+        "scope": 2077,
+        "sourceUnit": 17,
+        "src": "125:24:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2043,
+              "name": "VRFCoordinatorMock",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3020,
+              "src": "243:18:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_VRFCoordinatorMock_$3020",
+                "typeString": "contract VRFCoordinatorMock"
+              }
+            },
+            "id": 2044,
+            "nodeType": "InheritanceSpecifier",
+            "src": "243:18:7"
+          }
+        ],
+        "contractDependencies": [
+          3020
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 2042,
+          "nodeType": "StructuredDocumentation",
+          "src": "151:59:7",
+          "text": " @dev THIS CONTRACT IS FOR TESTING PURPOSES ONLY."
+        },
+        "fullyImplemented": true,
+        "id": 2076,
+        "linearizedBaseContracts": [
+          2076,
+          3020
+        ],
+        "name": "Mock_VRFCoordinator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 2046,
+            "mutability": "mutable",
+            "name": "keyHash",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2076,
+            "src": "273:24:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 2045,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "273:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 2048,
+            "mutability": "mutable",
+            "name": "fee",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2076,
+            "src": "303:20:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2047,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "303:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 2050,
+            "mutability": "mutable",
+            "name": "requester",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2076,
+            "src": "329:26:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 2049,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "329:7:7",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "functionSelector": "42619f66",
+            "id": 2052,
+            "mutability": "mutable",
+            "name": "randomResult",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2076,
+            "src": "361:27:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2051,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "361:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "6be4097c",
+            "id": 2054,
+            "mutability": "mutable",
+            "name": "currentLotteryId",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2076,
+            "src": "394:31:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2053,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "394:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 2074,
+              "nodeType": "Block",
+              "src": "606:56:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2068,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 2066,
+                      "name": "keyHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2046,
+                      "src": "616:7:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 2067,
+                      "name": "_keyHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2058,
+                      "src": "626:8:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "616:18:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 2069,
+                  "nodeType": "ExpressionStatement",
+                  "src": "616:18:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2072,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 2070,
+                      "name": "fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2048,
+                      "src": "644:3:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 2071,
+                      "name": "_fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2060,
+                      "src": "650:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "644:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 2073,
+                  "nodeType": "ExpressionStatement",
+                  "src": "644:10:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2075,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 2063,
+                    "name": "_linkToken",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2056,
+                    "src": "572:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 2064,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 2062,
+                  "name": "VRFCoordinatorMock",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 3020,
+                  "src": "539:18:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_VRFCoordinatorMock_$3020_$",
+                    "typeString": "type(contract VRFCoordinatorMock)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "539:55:7"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2061,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2056,
+                  "mutability": "mutable",
+                  "name": "_linkToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2075,
+                  "src": "457:18:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2055,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "457:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2058,
+                  "mutability": "mutable",
+                  "name": "_keyHash",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2075,
+                  "src": "485:16:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2057,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "485:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2060,
+                  "mutability": "mutable",
+                  "name": "_fee",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2075,
+                  "src": "511:12:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2059,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "511:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "447:82:7"
+            },
+            "returnParameters": {
+              "id": 2065,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "606:0:7"
+            },
+            "scope": 2076,
+            "src": "436:226:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 2077,
+        "src": "211:453:7"
+      }
+    ],
+    "src": "31:633:7"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/workspace/ethereum/phoenixdefi/smart-contracts/lottery/contracts/Mock_VRFCoordinator.sol",
+      "exportedSymbols": {
+        "Mock_VRFCoordinator": [
+          2076
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 2039,
+        "name": "PragmaDirective",
+        "src": "31:23:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 3021,
+          "absolutePath": "@chainlink/contracts/src/v0.6/tests/VRFCoordinatorMock.sol",
+          "file": "@chainlink/contracts/src/v0.6/tests/VRFCoordinatorMock.sol",
+          "scope": 2077,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2040,
+        "name": "ImportDirective",
+        "src": "56:68:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 17,
+          "absolutePath": "/workspace/ethereum/phoenixdefi/smart-contracts/lottery/contracts/ILottery.sol",
+          "file": "./ILottery.sol",
+          "scope": 2077,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2041,
+        "name": "ImportDirective",
+        "src": "125:24:7"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            3020
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            2076,
+            3020
+          ],
+          "name": "Mock_VRFCoordinator",
+          "scope": 2077
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @dev THIS CONTRACT IS FOR TESTING PURPOSES ONLY."
+            },
+            "id": 2042,
+            "name": "StructuredDocumentation",
+            "src": "151:59:7"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "VRFCoordinatorMock",
+                  "referencedDeclaration": 3020,
+                  "type": "contract VRFCoordinatorMock"
+                },
+                "id": 2043,
+                "name": "UserDefinedTypeName",
+                "src": "243:18:7"
+              }
+            ],
+            "id": 2044,
+            "name": "InheritanceSpecifier",
+            "src": "243:18:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "keyHash",
+              "overrides": null,
+              "scope": 2076,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes32",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes32",
+                  "type": "bytes32"
+                },
+                "id": 2045,
+                "name": "ElementaryTypeName",
+                "src": "273:7:7"
+              }
+            ],
+            "id": 2046,
+            "name": "VariableDeclaration",
+            "src": "273:24:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "fee",
+              "overrides": null,
+              "scope": 2076,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 2047,
+                "name": "ElementaryTypeName",
+                "src": "303:7:7"
+              }
+            ],
+            "id": 2048,
+            "name": "VariableDeclaration",
+            "src": "303:20:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "requester",
+              "overrides": null,
+              "scope": 2076,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 2049,
+                "name": "ElementaryTypeName",
+                "src": "329:7:7"
+              }
+            ],
+            "id": 2050,
+            "name": "VariableDeclaration",
+            "src": "329:26:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "42619f66",
+              "mutability": "mutable",
+              "name": "randomResult",
+              "overrides": null,
+              "scope": 2076,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 2051,
+                "name": "ElementaryTypeName",
+                "src": "361:7:7"
+              }
+            ],
+            "id": 2052,
+            "name": "VariableDeclaration",
+            "src": "361:27:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "6be4097c",
+              "mutability": "mutable",
+              "name": "currentLotteryId",
+              "overrides": null,
+              "scope": 2076,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 2053,
+                "name": "ElementaryTypeName",
+                "src": "394:7:7"
+              }
+            ],
+            "id": 2054,
+            "name": "VariableDeclaration",
+            "src": "394:31:7"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "name": "",
+              "overrides": null,
+              "scope": 2076,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_linkToken",
+                      "overrides": null,
+                      "scope": 2075,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2055,
+                        "name": "ElementaryTypeName",
+                        "src": "457:7:7"
+                      }
+                    ],
+                    "id": 2056,
+                    "name": "VariableDeclaration",
+                    "src": "457:18:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_keyHash",
+                      "overrides": null,
+                      "scope": 2075,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 2057,
+                        "name": "ElementaryTypeName",
+                        "src": "485:7:7"
+                      }
+                    ],
+                    "id": 2058,
+                    "name": "VariableDeclaration",
+                    "src": "485:16:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_fee",
+                      "overrides": null,
+                      "scope": 2075,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2059,
+                        "name": "ElementaryTypeName",
+                        "src": "511:7:7"
+                      }
+                    ],
+                    "id": 2060,
+                    "name": "VariableDeclaration",
+                    "src": "511:12:7"
+                  }
+                ],
+                "id": 2061,
+                "name": "ParameterList",
+                "src": "447:82:7"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2065,
+                "name": "ParameterList",
+                "src": "606:0:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 3020,
+                      "type": "type(contract VRFCoordinatorMock)",
+                      "value": "VRFCoordinatorMock"
+                    },
+                    "id": 2062,
+                    "name": "Identifier",
+                    "src": "539:18:7"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 2056,
+                      "type": "address",
+                      "value": "_linkToken"
+                    },
+                    "id": 2063,
+                    "name": "Identifier",
+                    "src": "572:10:7"
+                  }
+                ],
+                "id": 2064,
+                "name": "ModifierInvocation",
+                "src": "539:55:7"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bytes32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2046,
+                              "type": "bytes32",
+                              "value": "keyHash"
+                            },
+                            "id": 2066,
+                            "name": "Identifier",
+                            "src": "616:7:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2058,
+                              "type": "bytes32",
+                              "value": "_keyHash"
+                            },
+                            "id": 2067,
+                            "name": "Identifier",
+                            "src": "626:8:7"
+                          }
+                        ],
+                        "id": 2068,
+                        "name": "Assignment",
+                        "src": "616:18:7"
+                      }
+                    ],
+                    "id": 2069,
+                    "name": "ExpressionStatement",
+                    "src": "616:18:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2048,
+                              "type": "uint256",
+                              "value": "fee"
+                            },
+                            "id": 2070,
+                            "name": "Identifier",
+                            "src": "644:3:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2060,
+                              "type": "uint256",
+                              "value": "_fee"
+                            },
+                            "id": 2071,
+                            "name": "Identifier",
+                            "src": "650:4:7"
+                          }
+                        ],
+                        "id": 2072,
+                        "name": "Assignment",
+                        "src": "644:10:7"
+                      }
+                    ],
+                    "id": 2073,
+                    "name": "ExpressionStatement",
+                    "src": "644:10:7"
+                  }
+                ],
+                "id": 2074,
+                "name": "Block",
+                "src": "606:56:7"
+              }
+            ],
+            "id": 2075,
+            "name": "FunctionDefinition",
+            "src": "436:226:7"
+          }
+        ],
+        "id": 2076,
+        "name": "ContractDefinition",
+        "src": "211:453:7"
+      }
+    ],
+    "id": 2077,
+    "name": "SourceUnit",
+    "src": "31:633:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-05-31T03:05:18.819Z",
+  "devdoc": {
+    "details": "THIS CONTRACT IS FOR TESTING PURPOSES ONLY.",
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

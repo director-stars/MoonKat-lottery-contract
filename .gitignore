@@ -1,0 +1,11 @@
+.gitattributes
+.idea/
+node_modules
+to_nuke
+cache
+.env
+coverage/
+coverage.json
+.solcover.js
+.vscode
+flatten
