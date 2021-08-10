@@ -81,7 +81,7 @@ contract Lottery is LotteryOwnable, Initializable {
         maxNumber = _maxNumber;
         adminAddress = _adminAddress;
         lastTimestamp = block.timestamp;
-        allocation = [50, 20, 10];
+        allocation = [40, 20, 10];
         initOwner(_owner);
     }
 

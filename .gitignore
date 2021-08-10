@@ -9,3 +9,5 @@ coverage.json
 .solcover.js
 .vscode
 flatten
+test
+script
